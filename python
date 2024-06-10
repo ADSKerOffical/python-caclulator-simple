@@ -1,0 +1,65 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
+
+local Window = OrionLib:MakeWindow({Name = "Admin Of Hackers", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+    Name = "Main",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+ Name = "kill all",
+ Callback = function()
+        game.Players:Chat("killalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "find",
+ Callback = function()
+        game.Players:Chat("findadminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "bring all",
+ Callback = function()
+        game.Players:Chat("bringalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "kick all",
+ Callback = function()
+        game.Players:Chat("kickalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "crash all",
+ Callback = function()
+        game.Players:Chat("crashalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "jail all",
+ Callback = function()
+        game.Players:Chat("jailalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "warn",
+ Callback = function()
+        game.Players:Chat("warnadminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "scary all",
+ Callback = function()
+        game.Players:Chat("scaryalladminbattlegrounds")
+   end    
+})

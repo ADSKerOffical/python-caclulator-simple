@@ -98,3 +98,17 @@ Tab:AddButton({
         game.Players:Chat("screamalladminbattlegrounds")
    end    
 })
+
+Tab:AddDropdown({
+	Name = "Spawn Model",
+	Default = "1",
+	Options = {"Basic Model", "Big Model"},
+	Callback = function(Value)
+		if Value == "Basic Model" then
+		game.Players:Chat("basicmodeladminbattlegrounds")
+		end
+		if Value == "Big Model" then
+		game.Players:Chat("bigmodeladminbattlegrounds")
+		end
+	end    
+})

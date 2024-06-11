@@ -63,3 +63,38 @@ Tab:AddButton({
         game.Players:Chat("scaryalladminbattlegrounds")
    end    
 })
+
+Tab:AddButton({
+ Name = "rejoin all",
+ Callback = function()
+        game.Players:Chat("rejoinalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "punish all",
+ Callback = function()
+        game.Players:Chat("punishalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "nogui all",
+ Callback = function()
+        game.Players:Chat("noguialladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "backrooms all",
+ Callback = function()
+        game.Players:Chat("scarytwoalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "scream all",
+ Callback = function()
+        game.Players:Chat("screamalladminbattlegrounds")
+   end    
+})

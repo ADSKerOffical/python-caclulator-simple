@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
 
-local Window = OrionLib:MakeWindow({Name = "Admin Of Hackers", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Admin of Hackers", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Admin Panel", IntroIcon = "rbxassetid://7733955740"})
 
 local Tab = Window:MakeTab({
     Name = "Main",
@@ -102,7 +102,7 @@ Tab:AddButton({
 Tab:AddDropdown({
 	Name = "Spawn Model",
 	Default = "1",
-	Options = {"Basic Model", "Big Model"},
+	Options = {"Basic Model", "Big Model", "Titan Model"},
 	Callback = function(Value)
 		if Value == "Basic Model" then
 		game.Players:Chat("basicmodeladminbattlegrounds")

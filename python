@@ -110,6 +110,9 @@ Tab:AddDropdown({
 		if Value == "Big Model" then
 		game.Players:Chat("bigmodeladminbattlegrounds")
 		end
+                if Value == "Titan Model" then
+                game.Players:Chat("titanmodeladminbattlegrounds")
+                end
 	end    
 })
 
@@ -152,5 +155,26 @@ Tab:AddButton({
  Name = "explode all",
  Callback = function()
         game.Players:Chat("explodealladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Fake message server info",
+ Callback = function()
+        game.Players:Chat("fakemessageinfoadminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "fasten all",
+ Callback = function()
+        game.Players:Chat("fastenalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "BUDGIE all",
+ Callback = function()
+        game.Players:Chat("budgiealladminbattlegrounds")
    end    
 })

@@ -112,3 +112,45 @@ Tab:AddDropdown({
 		end
 	end    
 })
+
+Tab:AddButton({
+ Name = "fake player",
+ Callback = function()
+        game.Players:Chat("fakeplayeradminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "delete all tools all",
+ Callback = function()
+        game.Players:Chat("deletealltoolsalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "T pose all",
+ Callback = function()
+        game.Players:Chat("tposealladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "slip all",
+ Callback = function()
+        game.Players:Chat("zeromassalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "break zoom all",
+ Callback = function()
+        game.Players:Chat("breakzoomalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "explode all",
+ Callback = function()
+        game.Players:Chat("explodealladminbattlegrounds")
+   end    
+})

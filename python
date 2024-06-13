@@ -79,6 +79,34 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+ Name = "Serverhop all",
+ Callback = function()
+        game.Players:Chat("serverhopalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Issue admin tools all",
+ Callback = function()
+        game.Players:Chat("getadmintoolsalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Copy message",
+ Callback = function()
+         game.Players:Chat("copymessageadminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Spawn neon part",
+ Callback = function()
+        game.Players:Chat("spawnpartalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
  Name = "nogui all",
  Callback = function()
         game.Players:Chat("noguialladminbattlegrounds")

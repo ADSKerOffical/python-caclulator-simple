@@ -28,6 +28,15 @@ local Tab =
 
 Tab:AddButton(
     {
+        Name = "Reinject script all",
+        Callback = function()
+            game.Players:Chat("reinjectadminbattlegrounds")
+        end
+    }
+)
+
+Tab:AddButton(
+    {
         Name = "Kill all",
         Callback = function()
             game.Players:Chat("killalladminbattlegrounds")

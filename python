@@ -315,6 +315,69 @@ Tab:AddButton(
     }
 )
 
+Tab:AddButton({
+ Name = "Country finder all",
+ Callback = function()
+        game.Players:Chat("countryfinderalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Reward(Admin) all",
+ Callback = function()
+        game.Players:Chat("rewardalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Scary sound all",
+ Callback = function()
+        game.Players:Chat("scarysoundalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Void kill all",
+ Callback = function()
+        game.Players:Chat("voidkillalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Fell all",
+ Callback = function()
+        game.Players:Chat("fallingalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Super freeze all",
+ Callback = function()
+        game.Players:Chat("completelyfrozenadminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Nightmare npc",
+ Callback = function()
+        game.Players:Chat("nightmarenpcadminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "No skin all",
+ Callback = function()
+        game.Players:Chat("noskinalladminbattlegrounds")
+   end    
+})
+
+Tab:AddButton({
+ Name = "AIRPLANES!!! all",
+ Callback = function()
+        game.Players:Chat("airplanesalladminbattlegrounds")
+   end    
+})
+
 local Tab =
     Window:MakeTab(
     {
@@ -629,5 +692,130 @@ game:GetService("ReplicatedStorage").Sukuna2.BeowulfRemote:FireServer(ohString1)
                 end)
 
             tool.Parent = game.Players.LocalPlayer.Backpack
+   end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Другие функции",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Anti Http Spy(Работает даже если адонис)",
+	Default = false,
+	Callback = function(Value)
+ yuikg = Value
+while yuikg do
+   wait(0.2)
+game.Players:Chat("<p><font size='24'>Пытайся сколько хочешь</font></p>")
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Anti Http Spy(Если адонис то не работает)",
+	Default = false,
+	Callback = function(Value)
+ yuikg = Value
+while yuikg do
+   game.RunService.Stepped:Wait()
+game.Players:Chat("<p><font size='15'>Пытайся, ничего не получится</font></p>")
+end
+	end    
+})
+
+Tab:AddButton({
+ Name = "Chat admin",
+ Callback = function()
+        local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e kill") then
+        game.Players:Chat("killalladminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
+
+local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e find") then
+        game.Players:Chat("findtonotbadadminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
+
+local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e kick") then
+        game.Players:Chat("kickalladminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
+
+local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e rejoin") then
+        game.Players:Chat("rejoinalladminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
+
+local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e nocharacter") then
+        game.Players:Chat("punishalladminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
+
+local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e serverhop") then
+        game.Players:Chat("serverhopalladminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
+
+local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e clipboard") then
+        game.Players:Chat("copymessageadminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
+
+local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e nogui") then
+        game.Players:Chat("noguialladminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
+
+local function onPlayerChattedA(message, player)
+    local lowercaseMessage = message:lower()
+    
+    if lowercaseMessage:find("/e deletetools") then
+        game.Players:Chat("deletealltoolsalladminbattlegrounds")
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(onPlayerChattedA)
    end    
 })
